@@ -6,6 +6,7 @@ import guru.springframework.spring6webapp.Domain.Publisher;
 import guru.springframework.spring6webapp.repositories.AuthorRepository;
 import guru.springframework.spring6webapp.repositories.BookRepository;
 import guru.springframework.spring6webapp.repositories.PublisherRepository;
+import guru.springframework.spring6webapp.services.AuthorServiceImpl;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -69,6 +70,8 @@ public class BootstrapData implements CommandLineRunner {
         bookRepository.save(noEJBSaved);
 
         System.out.println("In Bootstrap");
+
+
 //        System.out.println("Author Count : " + authorRepository.count());
 //        System.out.println("Book Count : " + bookRepository.count());
 //
